@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="res">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.test.res.datasource.entity.ResCrmDataHistoryEntity</class>
+        <class>com.test.res.datasource.entity.ResLmsDataHistoryEntity</class>
+        <class>com.test.res.datasource.entity.ResRewardItemEntity</class>
+        <class>com.test.res.datasource.entity.ResSystemSettingEntity</class>
+        <class>com.test.res.datasource.entity.ResTxnDetailEntity</class>
+        <class>com.test.res.datasource.entity.ResTxnMasterEntity</class>
+        <class>com.test.res.datasource.entity.ResUserEntity</class>
+        <class>com.test.res.datasource.entity.ResUserCreditEntity</class>
+        <class>com.test.res.datasource.entity.ResUserDeliveryInfoEntity</class>
+        <class>com.test.res.datasource.entity.ResLoginTimeRecordEntity</class>
+        <class>com.test.res.datasource.entity.ResMerchantSettingEntity</class>
+        <class>com.test.res.datasource.entity.ResPendingUserCreditEntity</class>
+        <class>com.test.res.datasource.entity.ResUserAccumulativeAmountEntity</class>
+        <class>com.test.res.datasource.entity.ResCurriculumRewardMapEntity</class>
+        <class>com.test.res.datasource.entity.ResUserItemMapEntity</class>
+        <class>com.test.res.datasource.entity.ResItemRelationshipMapEntity</class>
+        <class>com.test.res.datasource.entity.ResUserProgrammeMapEntity</class>
+        <class>com.test.res.datasource.entity.TestEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/res"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username"/>
+            <property name="hibernate.connection.password"/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
